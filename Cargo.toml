@@ -3,4 +3,12 @@ name = "crd-controller"
 version = "0.1.0"
 edition = "2021"
 
+[lib]
+name = "controller"
+path = "src/lib.rs"
+
 [dependencies]
+actix-web = "4.8.0"
+anyhow = "1.0.75"
+prometheus = "0.13.3"
+tokio = { version = "1", features = ["full"] }
