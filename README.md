@@ -19,5 +19,5 @@ make
 To run
 
 ```
-cargo run
+cargo run server
 ```
