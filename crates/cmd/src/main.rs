@@ -2,7 +2,7 @@ use actix_web::{
     get, middleware, web::Data, App, HttpRequest, HttpResponse, HttpServer, Responder,
 };
 use clap::Parser;
-pub use controller::State;
+pub use crd_controller::State;
 use prometheus::{Encoder, TextEncoder};
 
 #[get("/health")]

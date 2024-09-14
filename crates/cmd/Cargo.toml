@@ -1,0 +1,17 @@
+[package]
+name = "cmd"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "crd-controller"
+path = "src/main.rs"
+
+[dependencies]
+crd_controller.workspace = true
+
+actix-web = "4.8.0"
+anyhow = "1.0.75"
+clap = { version = "4.5.7", features = ["derive"] }
+prometheus = "0.13.3"
+tokio = { version = "1", features = ["full"] }
